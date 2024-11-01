@@ -1,31 +1,45 @@
 import React from 'react';
-import image from '../images/home_page_image.jpg';
-import downarrowsvg from '../images/circled-down-chevron-svgrepo-com.svg';
+import image from '../images/developer_desktop.jpg';
 import { Link } from 'react-scroll';
+import downarrowsvg from '../images/circled-down-chevron-svgrepo-com.svg';
+import profileimage from '../images/Zma_photo_crip.jpg';
 
 const ImageAltText = 'Adult female in office';
 const ArrowsvgText = 'Move down Arrow';
+const ProfileimageText = 'Profile Picture';
 
 const Home = ({ name, title }) => {
     return (
-        <section id='home' className='relative max-w-screen h-screen overflow-hidden'>
-            <img src={image} alt={ImageAltText} className='w-full h-screen object-cover' />
-            <div className='absolute top-20 left-1/2 transform -translate-x-1/2 sm:w-3/12 w-10/12 text-center'>
-                <h1 className='xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-bold text-white'>{name}</h1>
-                <h2 className='lg:text-3xl md:text-2xl text-xl mt-2 text-white'>{title}</h2>
+        <section id="home" className="relative flex flex-col md:flex-row items-center justify-center h-screen overflow-hidden bg-gray-100">
+            
+            {/*  Profile Details */}
+            <div className="flex flex-col justify-center items-center text-center  md:text-left md:w-1/2 p-8 md:pl-16 m-auto ">
+                <img src={profileimage} alt={ProfileimageText} className="w-1/2  rounded-full mb-6 md:mb-8 mt-10" />
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-800">
+                    {name}
+                </h1>
+                <h2 className="text-xl md:text-3xl text-gray-600 mt-4">
+                    {title}
+                </h2>
+
+                <div className="mt-8 animate-bounce">
+                    <Link to="about" smooth={true} duration={500}>
+                        <img src={downarrowsvg} alt={ArrowsvgText} className=" cursor-pointer" />
+                    </Link>
+                </div>
             </div>
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <Link to="about" smooth={true} duration={500}>
-                    <img src={downarrowsvg} alt={ArrowsvgText} className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 cursor-pointer" />
-                </Link>
+
+            {/* Right Side Image  */}
+            <div className="md:w-1/2 w-full h-full relative hidden md:block">
+                <img src={image} alt={ImageAltText} className="object-cover h-full w-full md:rounded-l-3xl shadow-lg" />
             </div>
         </section>
     );
 };
 
 Home.defaultProps = {
-    name: '',
-    title: ''
+    name: 'Your Name',
+    title: 'Your Title'
 };
 
 export default Home;

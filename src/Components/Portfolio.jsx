@@ -29,21 +29,15 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-10 bg-gray-100">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">Portfolio</h1>
+    <section id="portfolio" className="py-10 w-screen min-h-screen p-12 bg-gray-100">
+      <h1 className="text-3xl md:text-4xl font-bold text-center my-12">Portfolio</h1>
 
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
-        
-        {/* Image Section */}
-        <div className="flex justify-center items-center">
-          <img src={image} alt={imageAltText} className="w-full  rounded-lg shadow-lg" />
-        </div>
 
         {/* Projects List Section */}
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-wrap justify-center align-middle gap-12 overflow-hidden">
           {projectList.map((project) => (
-            <div key={project.title} className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
-              
+            <div key={project.title} className="bg-white border w-[400px] border-gray-200 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
+
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               </a>
@@ -57,7 +51,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-      </div>
+
     </section>
   );
 };

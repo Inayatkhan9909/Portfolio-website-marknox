@@ -2,7 +2,7 @@ import React from 'react';
 import bg_image from '../images/Purple-and-blue-gradient-background-diamond-abstract-vector.jpg';
 
 const bg_imageText = 'Purple and blue gradient background diamond abstract vector';
-const description = 'I am a passionate Full Stack Developer . I have a strong foundation in both front-end and back-end technologies, and I am committed to delivering high-quality, responsive, and user-friendly solutions.';
+const description = 'I am a passionate Full Stack Developer. I have a strong foundation in both front-end and back-end technologies, and I am committed to delivering high-quality, responsive, and user-friendly solutions.';
 
 const skillsList = [
   'JavaScript',
@@ -18,18 +18,21 @@ const DetailorQuote = 'I am a passionate Full Stack Developer. I am committed to
 
 const About = () => {
   return (
-    <section id="about" className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <section
+      id="about"
+      className="relative w-full h-screen overflow-hidden flex items-center justify-center pt-16 scroll-mt-16"
+    >
       {/* Background Image */}
       <img src={bg_image} alt={bg_imageText} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80"></div>
 
       {/* Content Container */}
-      <div className="relative max-w-4xl mx-auto bg-white bg-opacity-90 text-center p-6 md:p-10 lg:p-16 rounded-lg shadow-lg">
+      <div className="relative max-w-3xl bg-white bg-opacity-90 text-center p-6 md:p-10  rounded-lg shadow-lg m-auto">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">About Myself</h1>
-        <p className=" sm:text-lg text-gray-700 mb-6">{description}</p>
+        <p className="text-sm sm:text-lg text-gray-700 mb-6">{description}</p>
 
         {/* Skills List */}
-        <ul className="text-left grid grid-cols-2 gap-4 text-sm sm:text-base md:text-lg w-2/3 text-gray-800 mx-auto mb-6">
+        <ul className="text-left grid grid-cols-2 gap-2 text-sm sm:text-base md:text-lg w-3/6 text-gray-800 mx-auto mb-6">
           {skillsList.map((skill) => (
             <li key={skill} className=" before:text-indigo-500 before:mr-2">{skill}</li>
           ))}
@@ -42,6 +45,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
 export default About;
