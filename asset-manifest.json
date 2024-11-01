@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio-website-marknox/static/css/main.823566b8.css",
+    "main.js": "/Portfolio-website-marknox/static/js/main.cf48f437.js",
+    "static/media/Holiday_cab_service_img.png": "/Portfolio-website-marknox/static/media/Holiday_cab_service_img.0dd19129f494bdc95062.png",
+    "static/media/internshub_image.png": "/Portfolio-website-marknox/static/media/internshub_image.98b10b75cefb0575b3a4.png",
+    "static/media/myportfolio_image.png": "/Portfolio-website-marknox/static/media/myportfolio_image.fb83bae51f73ffd285c7.png",
+    "static/media/Purple-and-blue-gradient-background-diamond-abstract-vector.jpg": "/Portfolio-website-marknox/static/media/Purple-and-blue-gradient-background-diamond-abstract-vector.f35e2444a5e9cb40760c.jpg",
+    "static/media/home_page_image.jpg": "/Portfolio-website-marknox/static/media/home_page_image.15373fe559662609aff3.jpg",
+    "static/media/portolio_section_image.webp": "/Portfolio-website-marknox/static/media/portolio_section_image.d8d075cf2a06f690e52a.webp",
+    "static/media/instagram-167-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/instagram-167-svgrepo-com.96d037e023a6da5ef25cb299ae9436fb.svg",
+    "static/media/twitter-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/twitter-svgrepo-com.b82a64e0bc39e36b85b2c2ee31838c52.svg",
+    "static/media/devdotto-svgrepo-com (1).svg": "/Portfolio-website-marknox/static/media/devdotto-svgrepo-com (1).cf14356204b4be8ed50c4e7fa8bd539f.svg",
+    "static/media/linkedin-logo-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/linkedin-logo-svgrepo-com.55333711493916a01c20b5e4f1cf2b1a.svg",
+    "static/media/envelope-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/envelope-svgrepo-com.34cc965254f7db2b0a1c30b7f7fea2c6.svg",
+    "static/media/github-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/github-svgrepo-com.059894da4a4fb89b6a076ac15d57ad76.svg",
+    "index.html": "/Portfolio-website-marknox/index.html",
+    "static/media/medium-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/medium-svgrepo-com.320ed05b45f1efb4f6ecb5d5fb8a1cb8.svg",
+    "static/media/youtube-play-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/youtube-play-svgrepo-com.22f1045be69c56b640c9dfe8f6859a1e.svg",
+    "static/media/circled-down-chevron-svgrepo-com.svg": "/Portfolio-website-marknox/static/media/circled-down-chevron-svgrepo-com.d8a7cc380c3e48c4132eb0095eeb2ea1.svg",
+    "main.823566b8.css.map": "/Portfolio-website-marknox/static/css/main.823566b8.css.map",
+    "main.cf48f437.js.map": "/Portfolio-website-marknox/static/js/main.cf48f437.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.823566b8.css",
+    "static/js/main.cf48f437.js"
+  ]
+}
