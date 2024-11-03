@@ -1,10 +1,8 @@
 import React from 'react';
-import image from '../images/portolio_section_image.webp';
 import HolidayImage from '../images/Holiday_cab_service_img.png';
 import InternshubImage from '../images/internshub_image.png';
 import MyportfolioImage from '../images/myportfolio_image.png';
 
-const imageAltText = 'Desktop with books and laptop';
 
 const projectList = [
   {
@@ -33,24 +31,24 @@ const Portfolio = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-center my-12">Portfolio</h1>
 
 
-        {/* Projects List Section */}
-        <div className="flex flex-wrap justify-center align-middle gap-12 overflow-hidden">
-          {projectList.map((project) => (
-            <div key={project.title} className="bg-white border w-[400px] border-gray-200 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
+      {/* Projects List Section */}
+      <div className="flex flex-wrap justify-center align-middle gap-12 overflow-hidden">
+        {projectList.map((project) => (
+          <div key={project.title} className="bg-white border w-[400px] border-gray-200 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
 
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            </a>
+
+            <div className="p-4 text-center">
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className="block text-xl font-semibold text-gray-800 hover:text-indigo-600 transition-colors duration-200">
+                {project.title}
               </a>
-
-              <div className="p-4 text-center">
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="block text-xl font-semibold text-gray-800 hover:text-indigo-600 transition-colors duration-200">
-                  {project.title}
-                </a>
-                <p className="text-gray-600 mt-2">{project.description}</p>
-              </div>
+              <p className="text-gray-600 mt-2">{project.description}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
     </section>
   );

@@ -6,27 +6,27 @@ import Portfolio from "./Components/Portfolio";
 import './styles/output.css'
 
 const siteProps = {
-  name:"Inayat Ullah Khan",
-  title:"Web Designer & Web Developer",
+  name: "Inayat Ullah Khan",
+  title: "Web Designer & Web Developer",
   email: "khan99.inayat@example.com",
-  github:"microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
+  github: "Inayatkhan9909",
+  instagram: "khan inayat",
+  linkedIn: "in/inayat-ullah-khan-b428a32a3/",
   medium: "",
-  devdotTo:"",
-  twitter: "microsoft",
-  youTube: "Code",
- }
- const primaryColor = "#4E567E";
-  const secondaryColor = "#D2F1E4";
+  devdotTo: "",
+  twitter: "",
+  youTube: "",
+}
+const primaryColor = "#4E567E";
+
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <Home name={siteProps.name} title={siteProps.title}/>
-    <About/>
-    <Portfolio/>
-    <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor}/>
+      <Header />
+      <Home name={siteProps.name} title={siteProps.title} />
+      <About />
+      <Portfolio />
+      <Footer {...siteProps} primaryColor={primaryColor} />
     </div>
   );
 }
